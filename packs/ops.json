@@ -1,0 +1,132 @@
+{
+  "id": "ops",
+  "title": "部署 / 运维",
+  "priority": 51,
+  "match": [
+    "部署",
+    "服务器",
+    "nginx",
+    "docker",
+    "自启",
+    "定时任务",
+    "cron",
+    "监控",
+    "备份",
+    "上线",
+    "https"
+  ],
+  "points": [
+    {
+      "id": "target",
+      "q": "部署到哪",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "cloud",
+          "label": "云服务器（有 root）",
+          "default": true
+        },
+        {
+          "v": "local",
+          "label": "本机 / NAS"
+        },
+        {
+          "v": "free",
+          "label": "免费平台（Vercel 等）"
+        }
+      ]
+    },
+    {
+      "id": "domain",
+      "q": "域名与 HTTPS",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "domain",
+          "label": "有域名，要 HTTPS",
+          "default": true
+        },
+        {
+          "v": "ip",
+          "label": "只用 IP + 端口"
+        },
+        {
+          "v": "you",
+          "label": "你看着办"
+        }
+      ]
+    },
+    {
+      "id": "method",
+      "q": "部署方式",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "ssh",
+          "label": "手动 ssh + 命令",
+          "default": true
+        },
+        {
+          "v": "compose",
+          "label": "Docker Compose"
+        },
+        {
+          "v": "ci",
+          "label": "GitHub Actions 自动"
+        }
+      ]
+    },
+    {
+      "id": "keep",
+      "q": "保活",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "service",
+          "label": "systemd / 自启 + 日志",
+          "default": true
+        },
+        {
+          "v": "fg",
+          "label": "前台跑就行"
+        }
+      ]
+    },
+    {
+      "id": "monitor",
+      "q": "监控告警",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "none",
+          "label": "不需要",
+          "default": true
+        },
+        {
+          "v": "alert",
+          "label": "挂了发通知"
+        },
+        {
+          "v": "panel",
+          "label": "要一个状态面板"
+        }
+      ]
+    },
+    {
+      "id": "backup",
+      "q": "备份",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "none2",
+          "label": "不需要",
+          "default": true
+        },
+        {
+          "v": "daily",
+          "label": "每天打包到另一块盘"
+        }
+      ]
+    }
+  ]
+}

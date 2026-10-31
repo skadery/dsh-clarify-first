@@ -1,0 +1,134 @@
+{
+  "id": "game",
+  "title": "小游戏",
+  "priority": 53,
+  "match": [
+    "小游戏",
+    "游戏",
+    "贪吃蛇",
+    "俄罗斯方块",
+    "消除",
+    "跑酷",
+    "塔防",
+    "pinball",
+    "2048"
+  ],
+  "points": [
+    {
+      "id": "genre",
+      "q": "玩法",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "classic",
+          "label": "经典街机（贪吃蛇/方块）",
+          "default": true
+        },
+        {
+          "v": "platform",
+          "label": "平台跳跃"
+        },
+        {
+          "v": "text",
+          "label": "答题 / 文字冒险"
+        }
+      ]
+    },
+    {
+      "id": "platform",
+      "q": "跑在哪",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "browser",
+          "label": "浏览器（单 HTML 文件）",
+          "default": true
+        },
+        {
+          "v": "desktop",
+          "label": "桌面应用"
+        },
+        {
+          "v": "mobile",
+          "label": "手机触屏"
+        }
+      ]
+    },
+    {
+      "id": "art",
+      "q": "美术",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "block",
+          "label": "纯色方块（最快）",
+          "default": true
+        },
+        {
+          "v": "pixel",
+          "label": "像素风 sprite"
+        },
+        {
+          "v": "emoji",
+          "label": "用 emoji 凑"
+        }
+      ]
+    },
+    {
+      "id": "level",
+      "q": "关卡与计分",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "single",
+          "label": "单关跑通",
+          "default": true
+        },
+        {
+          "v": "levels",
+          "label": "3~5 关"
+        },
+        {
+          "v": "endless",
+          "label": "无限模式 + 榜"
+        }
+      ]
+    },
+    {
+      "id": "input",
+      "q": "操作方式",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "key",
+          "label": "键盘",
+          "default": true
+        },
+        {
+          "v": "mouse",
+          "label": "鼠标"
+        },
+        {
+          "v": "touch",
+          "label": "触屏 / 滑动"
+        }
+      ]
+    },
+    {
+      "id": "save",
+      "q": "存档",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "none",
+          "label": "不需要",
+          "default": true
+        },
+        {
+          "v": "best",
+          "label": "localStorage 存最高分"
+        }
+      ]
+    }
+  ]
+}

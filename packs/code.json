@@ -1,0 +1,134 @@
+{
+  "id": "code",
+  "title": "脚本 / 小工具",
+  "priority": 50,
+  "match": [
+    "脚本",
+    "插件",
+    "小工具",
+    "批处理",
+    "命令行",
+    "cli",
+    "爬虫脚本",
+    "定时跑",
+    "process"
+  ],
+  "points": [
+    {
+      "id": "lang",
+      "q": "语言",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "py",
+          "label": "Python（标准库优先）",
+          "default": true
+        },
+        {
+          "v": "node",
+          "label": "Node.js（要 npm 生态）"
+        },
+        {
+          "v": "ps",
+          "label": "PowerShell（Windows 原生）"
+        }
+      ]
+    },
+    {
+      "id": "shape",
+      "q": "形态",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "cli",
+          "label": "命令行，一次跑完",
+          "default": true
+        },
+        {
+          "v": "watch",
+          "label": "常驻 / 监听目录变化"
+        },
+        {
+          "v": "ui",
+          "label": "带个简单界面"
+        }
+      ]
+    },
+    {
+      "id": "io",
+      "q": "输入输出",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "file",
+          "label": "读本地文件 → 写本地文件",
+          "default": true
+        },
+        {
+          "v": "http",
+          "label": "调 HTTP API"
+        },
+        {
+          "v": "clip",
+          "label": "剪贴板 / 键鼠"
+        }
+      ]
+    },
+    {
+      "id": "env",
+      "q": "跑在哪",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "win",
+          "label": "Windows（本机）",
+          "default": true
+        },
+        {
+          "v": "linux",
+          "label": "Linux / macOS"
+        },
+        {
+          "v": "any",
+          "label": "跨平台"
+        }
+      ]
+    },
+    {
+      "id": "error",
+      "q": "出错怎么办",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "exit",
+          "label": "直接报错退出",
+          "default": true
+        },
+        {
+          "v": "skip",
+          "label": "跳过并记日志"
+        },
+        {
+          "v": "retry",
+          "label": "重试 + 断点续跑"
+        }
+      ]
+    },
+    {
+      "id": "deps",
+      "q": "依赖",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "stdlib",
+          "label": "只用标准库",
+          "default": true
+        },
+        {
+          "v": "any3p",
+          "label": "可以装第三方包"
+        }
+      ]
+    }
+  ]
+}

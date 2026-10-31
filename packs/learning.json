@@ -1,0 +1,135 @@
+{
+  "id": "learning",
+  "title": "学习 / 教程",
+  "priority": 44,
+  "match": [
+    "教我",
+    "学习",
+    "入门",
+    "教程",
+    "课程",
+    "路线",
+    "讲解",
+    "讲讲",
+    "怎么学",
+    "从零"
+  ],
+  "points": [
+    {
+      "id": "base",
+      "q": "现有基础",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "zero",
+          "label": "完全零基础",
+          "default": true
+        },
+        {
+          "v": "some",
+          "label": "会一点，写过 demo"
+        },
+        {
+          "v": "other",
+          "label": "有其它语言经验"
+        }
+      ]
+    },
+    {
+      "id": "pace",
+      "q": "节奏",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "d30",
+          "label": "每天 30 分钟",
+          "default": true
+        },
+        {
+          "v": "d120",
+          "label": "每天 2 小时"
+        },
+        {
+          "v": "weekend",
+          "label": "周末集中"
+        }
+      ]
+    },
+    {
+      "id": "goal",
+      "q": "目标",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "read",
+          "label": "能看懂 / 改别人代码",
+          "default": true
+        },
+        {
+          "v": "build",
+          "label": "能独立做项目"
+        },
+        {
+          "v": "interview",
+          "label": "应付面试"
+        }
+      ]
+    },
+    {
+      "id": "form",
+      "q": "形式",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "map",
+          "label": "路线图 + 资源清单",
+          "default": true
+        },
+        {
+          "v": "lessons",
+          "label": "分课时的教程"
+        },
+        {
+          "v": "project",
+          "label": "边做项目边学"
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "q": "练习",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "small",
+          "label": "每节配小题",
+          "default": true
+        },
+        {
+          "v": "big",
+          "label": "一个大作业"
+        },
+        {
+          "v": "none",
+          "label": "不要练习"
+        }
+      ]
+    },
+    {
+      "id": "check",
+      "q": "怎么验收",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "quiz",
+          "label": "阶段自测题",
+          "default": true
+        },
+        {
+          "v": "product",
+          "label": "做完一个成品"
+        }
+      ]
+    }
+  ]
+}

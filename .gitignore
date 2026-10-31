@@ -1,0 +1,11 @@
+node_modules/
+_tmp/
+plugins.json
+updates.json
+
+# 本地备份 / 临时产物
+*.bak
+*.bak-*
+*.log
+_*.json
+market/*.local.yml

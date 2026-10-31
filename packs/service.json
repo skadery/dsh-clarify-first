@@ -1,0 +1,136 @@
+{
+  "id": "service",
+  "title": "后端 / 服务",
+  "priority": 55,
+  "match": [
+    "后端",
+    "接口",
+    "服务端",
+    "微服务",
+    "登录",
+    "注册",
+    "权限",
+    "数据库",
+    "后台",
+    "小程序服务",
+    "websocket"
+  ],
+  "points": [
+    {
+      "id": "stack",
+      "q": "技术栈",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "node",
+          "label": "Node.js + Express/Fastify",
+          "default": true
+        },
+        {
+          "v": "py",
+          "label": "Python + FastAPI"
+        },
+        {
+          "v": "bare",
+          "label": "无框架，运行时内置模块"
+        }
+      ]
+    },
+    {
+      "id": "store",
+      "q": "数据存哪",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "sqlite",
+          "label": "SQLite（单文件，省事）",
+          "default": true
+        },
+        {
+          "v": "pg",
+          "label": "Postgres（要装服务）"
+        },
+        {
+          "v": "mem",
+          "label": "先内存 / JSON 文件"
+        }
+      ]
+    },
+    {
+      "id": "auth",
+      "q": "登录方式",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "jwt",
+          "label": "用户名密码 + JWT",
+          "default": true
+        },
+        {
+          "v": "code",
+          "label": "邮箱验证码"
+        },
+        {
+          "v": "oauth",
+          "label": "第三方 OAuth"
+        }
+      ]
+    },
+    {
+      "id": "deploy",
+      "q": "跑在哪",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "local",
+          "label": "本机跑",
+          "default": true
+        },
+        {
+          "v": "docker",
+          "label": "Docker 起"
+        },
+        {
+          "v": "cloud",
+          "label": "云服务器"
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "q": "先做到哪",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "api",
+          "label": "接口 + 文档",
+          "default": true
+        },
+        {
+          "v": "ui",
+          "label": "接口 + 一个简单前端"
+        },
+        {
+          "v": "admin",
+          "label": "完整管理后台"
+        }
+      ]
+    },
+    {
+      "id": "test",
+      "q": "要不要测试",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "smoke",
+          "label": "一组冒烟脚本",
+          "default": true
+        },
+        {
+          "v": "none",
+          "label": "不需要"
+        }
+      ]
+    }
+  ]
+}

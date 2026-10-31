@@ -1,0 +1,143 @@
+{
+  "id": "web",
+  "title": "网页 / 前端",
+  "priority": 60,
+  "match": [
+    "网页",
+    "网站",
+    "博客",
+    "前端",
+    "落地页",
+    "官网",
+    "文档站",
+    "个人站",
+    "主页",
+    "静态站"
+  ],
+  "points": [
+    {
+      "id": "form",
+      "q": "站点形态",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "static",
+          "label": "纯静态（零后端，可放 Pages）",
+          "default": true
+        },
+        {
+          "v": "spa",
+          "label": "单页应用（有交互状态，需构建）"
+        },
+        {
+          "v": "dynamic",
+          "label": "动态站点（数据库/登录/后台）"
+        }
+      ]
+    },
+    {
+      "id": "stack",
+      "q": "生成方式",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "hexo",
+          "label": "Hexo（中文生态、主题多）",
+          "default": true
+        },
+        {
+          "v": "hugo",
+          "label": "Hugo（构建最快）"
+        },
+        {
+          "v": "astro",
+          "label": "Astro（内容优先）"
+        },
+        {
+          "v": "next",
+          "label": "Next.js（要 SSR/交互）"
+        }
+      ]
+    },
+    {
+      "id": "deploy",
+      "q": "部署方式",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "pages",
+          "label": "GitHub Pages / Vercel（免费）",
+          "default": true
+        },
+        {
+          "v": "vps",
+          "label": "自己的服务器 / NAS"
+        },
+        {
+          "v": "local",
+          "label": "先本地跑通就行"
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "q": "内容从哪来",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "write",
+          "label": "我自己写 Markdown",
+          "default": true
+        },
+        {
+          "v": "import",
+          "label": "从现有文档/笔记导入"
+        },
+        {
+          "v": "sample",
+          "label": "先用示例文章占位"
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "q": "视觉风格",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "minimal",
+          "label": "极简排版（大量留白）",
+          "default": true
+        },
+        {
+          "v": "magazine",
+          "label": "杂志感（大图 + 衬线字）"
+        },
+        {
+          "v": "dev",
+          "label": "开发者风（深色 + 等宽）"
+        }
+      ]
+    },
+    {
+      "id": "extra",
+      "q": "必备功能",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "search",
+          "label": "搜索 + 标签/归档",
+          "default": true
+        },
+        {
+          "v": "comment",
+          "label": "评论（需接第三方）"
+        },
+        {
+          "v": "none",
+          "label": "只读浏览，越少越好"
+        }
+      ]
+    }
+  ]
+}

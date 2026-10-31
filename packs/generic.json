@@ -1,0 +1,96 @@
+{
+  "id": "generic",
+  "title": "通用",
+  "priority": 0,
+  "match": [],
+  "points": [
+    {
+      "id": "deliver",
+      "q": "交付形态",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "doc",
+          "label": "一份文档 / 方案",
+          "default": true
+        },
+        {
+          "v": "code",
+          "label": "可直接运行的代码"
+        },
+        {
+          "v": "list",
+          "label": "一份清单"
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "q": "范围",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "mvp",
+          "label": "最小可用，先跑通",
+          "default": true
+        },
+        {
+          "v": "full",
+          "label": "完整一点，含边界情况"
+        },
+        {
+          "v": "plan",
+          "label": "先给方案再动手"
+        }
+      ]
+    },
+    {
+      "id": "accept",
+      "q": "验收方式",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "judge",
+          "label": "我看结果判断对错",
+          "default": true
+        },
+        {
+          "v": "prove",
+          "label": "你给测试 / 截图证明"
+        }
+      ]
+    },
+    {
+      "id": "stack",
+      "q": "技术约束",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "free",
+          "label": "没限制，你选",
+          "default": true
+        },
+        {
+          "v": "fixed",
+          "label": "我指定（下一条消息说）"
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "q": "时间",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "now",
+          "label": "现在就做",
+          "default": true
+        },
+        {
+          "v": "later",
+          "label": "先给计划就行"
+        }
+      ]
+    }
+  ]
+}

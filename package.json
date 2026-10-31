@@ -1,0 +1,59 @@
+{
+  "name": "dsh-clarify-first",
+  "version": "0.2.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "首轮需求澄清：本会话第一条消息若需求欠定义，插件在模型动手前注入一条约 200 token 的一次性提示，让模型用原生 ask_user_question 一次问清 2~4 个决策点（选项来自本地模板库，可切精简/标准/深入三档）。不注册工具、不常驻 system prompt、不调用任何 LLM。 | Asks a few key questions before work starts, in one shot and roughly 200 tokens per session.",
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.1.7-rc.2"
+  },
+  "files": [
+    "lib",
+    "packs",
+    "tools",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check lib/index.js",
+    "test": "node tools/smoke.mjs"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "clarify",
+    "requirement",
+    "澄清",
+    "需求澄清",
+    "决策点"
+  ],
+  "dsh": {
+    "category": "extension",
+    "displayName": "澄清优先",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh": ">=0.1.7-rc.2 <0.3.0 || >=0.3.0-rc.1 <0.4.0-0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skadery/dsh-clarify-first.git"
+  },
+  "homepage": "https://github.com/skadery/dsh-clarify-first#readme",
+  "bugs": {
+    "url": "https://github.com/skadery/dsh-clarify-first/issues"
+  }
+}

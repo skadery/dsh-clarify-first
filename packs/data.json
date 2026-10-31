@@ -1,0 +1,133 @@
+{
+  "id": "data",
+  "title": "数据处理 / 分析",
+  "priority": 50,
+  "match": [
+    "爬虫",
+    "数据",
+    "清洗",
+    "分析",
+    "可视化",
+    "统计",
+    "图表",
+    "报表",
+    "看板",
+    "excel",
+    "csv",
+    "dashboard"
+  ],
+  "points": [
+    {
+      "id": "source",
+      "q": "数据从哪来",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "scrape",
+          "label": "网页抓取",
+          "default": true
+        },
+        {
+          "v": "file",
+          "label": "现有 CSV / Excel"
+        },
+        {
+          "v": "api",
+          "label": "公开 API"
+        }
+      ]
+    },
+    {
+      "id": "output",
+      "q": "要什么结果",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "table",
+          "label": "清洗后的表",
+          "default": true
+        },
+        {
+          "v": "report",
+          "label": "分析报告（Markdown）"
+        },
+        {
+          "v": "board",
+          "label": "可交互看板"
+        }
+      ]
+    },
+    {
+      "id": "scale",
+      "q": "数据规模",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "small",
+          "label": "几千行（内存够）",
+          "default": true
+        },
+        {
+          "v": "big",
+          "label": "几十万行（分块处理）"
+        },
+        {
+          "v": "unknown",
+          "label": "不确定，先抽样看看"
+        }
+      ]
+    },
+    {
+      "id": "freq",
+      "q": "更新频率",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "once",
+          "label": "一次性跑",
+          "default": true
+        },
+        {
+          "v": "daily",
+          "label": "每天定时更新"
+        }
+      ]
+    },
+    {
+      "id": "dirty",
+      "q": "脏数据怎么处理",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "drop",
+          "label": "跳过异常行",
+          "default": true
+        },
+        {
+          "v": "log",
+          "label": "记日志，事后人工复核"
+        },
+        {
+          "v": "fix",
+          "label": "尽量修补"
+        }
+      ]
+    },
+    {
+      "id": "viz",
+      "q": "要不要图",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "few",
+          "label": "2~3 张关键图",
+          "default": true
+        },
+        {
+          "v": "no",
+          "label": "不需要图"
+        }
+      ]
+    }
+  ]
+}

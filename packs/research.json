@@ -1,0 +1,127 @@
+{
+  "id": "research",
+  "title": "调研 / 选型",
+  "priority": 46,
+  "match": [
+    "调研",
+    "对比",
+    "评测",
+    "选型",
+    "竞品",
+    "哪个好",
+    "优劣",
+    "可行性",
+    "值不值得",
+    "方案对比"
+  ],
+  "points": [
+    {
+      "id": "depth",
+      "q": "要多深",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "brief",
+          "label": "一页结论 + 3 条理由",
+          "default": true
+        },
+        {
+          "v": "table",
+          "label": "对比表 + 取舍分析"
+        },
+        {
+          "v": "deep",
+          "label": "深度报告（含实测）"
+        }
+      ]
+    },
+    {
+      "id": "decide",
+      "q": "要不要拍板",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "pick",
+          "label": "直接给推荐结论",
+          "default": true
+        },
+        {
+          "v": "list",
+          "label": "只列选项，我自己定"
+        }
+      ]
+    },
+    {
+      "id": "source",
+      "q": "依据",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "doc",
+          "label": "官方文档为主",
+          "default": true
+        },
+        {
+          "v": "test",
+          "label": "要实测 / 跑一遍"
+        },
+        {
+          "v": "voice",
+          "label": "社区口碑"
+        }
+      ]
+    },
+    {
+      "id": "scope2",
+      "q": "对比范围",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "few",
+          "label": "只比 2~3 个候选",
+          "default": true
+        },
+        {
+          "v": "wide",
+          "label": "尽量覆盖全"
+        }
+      ]
+    },
+    {
+      "id": "format",
+      "q": "交付格式",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "md",
+          "label": "Markdown 文档",
+          "default": true
+        },
+        {
+          "v": "sheet",
+          "label": "表格"
+        },
+        {
+          "v": "deck",
+          "label": "幻灯片"
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "q": "时效",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "latest",
+          "label": "只看最新版本",
+          "default": true
+        },
+        {
+          "v": "history",
+          "label": "也要看演进历史"
+        }
+      ]
+    }
+  ]
+}

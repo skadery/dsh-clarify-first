@@ -1,0 +1,135 @@
+{
+  "id": "image",
+  "title": "图片生成 / 修图",
+  "priority": 57,
+  "match": [
+    "头像",
+    "插画",
+    "图标",
+    "画个",
+    "画一张",
+    "生成图",
+    "合影",
+    "抠图",
+    "修图",
+    "换背景"
+  ],
+  "points": [
+    {
+      "id": "kind",
+      "q": "画什么",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "avatar",
+          "label": "头像",
+          "default": true
+        },
+        {
+          "v": "illust",
+          "label": "插画 / 配图"
+        },
+        {
+          "v": "icon",
+          "label": "图标（一套）"
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "q": "画风",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "flat",
+          "label": "扁平矢量",
+          "default": true
+        },
+        {
+          "v": "render3d",
+          "label": "3D 渲染感"
+        },
+        {
+          "v": "paint",
+          "label": "手绘 / 水彩"
+        }
+      ]
+    },
+    {
+      "id": "bg",
+      "q": "底色",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "transparent",
+          "label": "透明底",
+          "default": true
+        },
+        {
+          "v": "solid",
+          "label": "纯色底"
+        },
+        {
+          "v": "scene",
+          "label": "带场景背景"
+        }
+      ]
+    },
+    {
+      "id": "size",
+      "q": "尺寸比例",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "square",
+          "label": "方图 1:1",
+          "default": true
+        },
+        {
+          "v": "wide",
+          "label": "横图 16:9"
+        },
+        {
+          "v": "tall",
+          "label": "竖图 9:16"
+        }
+      ]
+    },
+    {
+      "id": "count",
+      "q": "出几张",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "one",
+          "label": "1 张定稿",
+          "default": true
+        },
+        {
+          "v": "variants",
+          "label": "3 个变体里挑"
+        },
+        {
+          "v": "set",
+          "label": "一整套"
+        }
+      ]
+    },
+    {
+      "id": "text",
+      "q": "要不要文字",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "no",
+          "label": "不要文字",
+          "default": true
+        },
+        {
+          "v": "caption",
+          "label": "带一句短标题"
+        }
+      ]
+    }
+  ]
+}

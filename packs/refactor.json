@@ -1,0 +1,126 @@
+{
+  "id": "refactor",
+  "title": "改造 / 重构",
+  "priority": 49,
+  "match": [
+    "重构",
+    "迁移",
+    "升级",
+    "改造",
+    "重写",
+    "拆分",
+    "性能优化",
+    "瘦身",
+    "换成"
+  ],
+  "points": [
+    {
+      "id": "scope",
+      "q": "改多大范围",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "fn",
+          "label": "单个函数 / 文件",
+          "default": true
+        },
+        {
+          "v": "module",
+          "label": "一个模块"
+        },
+        {
+          "v": "all",
+          "label": "整个项目"
+        }
+      ]
+    },
+    {
+      "id": "goal",
+      "q": "目标",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "min",
+          "label": "能跑就行（最小改动）",
+          "default": true
+        },
+        {
+          "v": "clean",
+          "label": "结构清晰（允许重写）"
+        },
+        {
+          "v": "perf",
+          "label": "性能 / 体积优先"
+        }
+      ]
+    },
+    {
+      "id": "compat",
+      "q": "兼容性",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "strict",
+          "label": "不能破坏现有调用",
+          "default": true
+        },
+        {
+          "v": "free",
+          "label": "可以改接口"
+        }
+      ]
+    },
+    {
+      "id": "verify",
+      "q": "怎么验",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "test",
+          "label": "有测试，跑绿即可",
+          "default": true
+        },
+        {
+          "v": "add",
+          "label": "没测试，帮我补冒烟"
+        },
+        {
+          "v": "manual",
+          "label": "我手工点一遍"
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "q": "代码风格",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "keep",
+          "label": "保持现有风格",
+          "default": true
+        },
+        {
+          "v": "format",
+          "label": "顺手统一格式化"
+        }
+      ]
+    },
+    {
+      "id": "dep",
+      "q": "依赖",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "none",
+          "label": "不新增依赖",
+          "default": true
+        },
+        {
+          "v": "ok",
+          "label": "可以用新库"
+        }
+      ]
+    }
+  ]
+}

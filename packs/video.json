@@ -1,0 +1,138 @@
+{
+  "id": "video",
+  "title": "视频 / 音频",
+  "priority": 52,
+  "match": [
+    "视频",
+    "剪辑",
+    "字幕",
+    "配音",
+    "播客",
+    "音频",
+    "录屏",
+    "转码",
+    "vlog"
+  ],
+  "points": [
+    {
+      "id": "task",
+      "q": "做什么",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "cut",
+          "label": "剪辑 / 拼接",
+          "default": true
+        },
+        {
+          "v": "sub",
+          "label": "加字幕"
+        },
+        {
+          "v": "voice",
+          "label": "配音 / 变声"
+        }
+      ]
+    },
+    {
+      "id": "ratio",
+      "q": "画幅",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "wide",
+          "label": "16:9 横屏",
+          "default": true
+        },
+        {
+          "v": "tall",
+          "label": "9:16 竖屏"
+        },
+        {
+          "v": "square",
+          "label": "1:1 方图"
+        }
+      ]
+    },
+    {
+      "id": "length",
+      "q": "时长",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "short",
+          "label": "30 秒内",
+          "default": true
+        },
+        {
+          "v": "mid",
+          "label": "1~3 分钟"
+        },
+        {
+          "v": "long",
+          "label": "更长，分段处理"
+        }
+      ]
+    },
+    {
+      "id": "tool",
+      "q": "用什么做",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "ffmpeg",
+          "label": "ffmpeg 命令行",
+          "default": true
+        },
+        {
+          "v": "gui",
+          "label": "剪映等图形软件，我给步骤"
+        },
+        {
+          "v": "you",
+          "label": "你推荐"
+        }
+      ]
+    },
+    {
+      "id": "sub",
+      "q": "字幕从哪来",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "none",
+          "label": "不需要字幕",
+          "default": true
+        },
+        {
+          "v": "srt",
+          "label": "我有 srt"
+        },
+        {
+          "v": "auto",
+          "label": "要自动识别"
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "q": "配音",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "none2",
+          "label": "不需要",
+          "default": true
+        },
+        {
+          "v": "tts",
+          "label": "TTS 生成"
+        },
+        {
+          "v": "self",
+          "label": "我自己录"
+        }
+      ]
+    }
+  ]
+}

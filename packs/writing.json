@@ -1,0 +1,137 @@
+{
+  "id": "writing",
+  "title": "写作 / 文案",
+  "priority": 48,
+  "match": [
+    "文案",
+    "公众号",
+    "小红书",
+    "推文",
+    "朋友圈",
+    "邮件",
+    "软文",
+    "文章",
+    "小说",
+    "剧本",
+    "演讲稿",
+    "标题"
+  ],
+  "points": [
+    {
+      "id": "kind",
+      "q": "写什么",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "long",
+          "label": "公众号长文",
+          "default": true
+        },
+        {
+          "v": "short",
+          "label": "短文案（朋友圈 / 推文）"
+        },
+        {
+          "v": "mail",
+          "label": "邮件 / 正式信函"
+        }
+      ]
+    },
+    {
+      "id": "audience",
+      "q": "给谁看",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "peer",
+          "label": "同行 / 技术人",
+          "default": true
+        },
+        {
+          "v": "public",
+          "label": "普通大众"
+        },
+        {
+          "v": "client",
+          "label": "客户 / 领导"
+        }
+      ]
+    },
+    {
+      "id": "length",
+      "q": "篇幅",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "s",
+          "label": "300 字内",
+          "default": true
+        },
+        {
+          "v": "m",
+          "label": "800~1500 字"
+        },
+        {
+          "v": "l",
+          "label": "3000 字以上"
+        }
+      ]
+    },
+    {
+      "id": "tone",
+      "q": "语气",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "dry",
+          "label": "克制专业",
+          "default": true
+        },
+        {
+          "v": "casual",
+          "label": "轻松口语"
+        },
+        {
+          "v": "emo",
+          "label": "有情绪 / 有梗"
+        }
+      ]
+    },
+    {
+      "id": "struct",
+      "q": "结构",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "total",
+          "label": "总分总 + 小标题",
+          "default": true
+        },
+        {
+          "v": "story",
+          "label": "故事线推进"
+        },
+        {
+          "v": "list",
+          "label": "列表 / 要点式"
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "q": "结尾",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "cta",
+          "label": "给一句行动建议",
+          "default": true
+        },
+        {
+          "v": "none",
+          "label": "不要行动指引"
+        }
+      ]
+    }
+  ]
+}

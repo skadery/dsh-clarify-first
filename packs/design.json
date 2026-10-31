@@ -1,0 +1,131 @@
+{
+  "id": "design",
+  "title": "设计 / 视觉",
+  "priority": 58,
+  "match": [
+    "海报",
+    "封面",
+    "logo",
+    "标志",
+    "详情页",
+    "banner",
+    "视觉",
+    "配图",
+    "宣传图",
+    "首图"
+  ],
+  "points": [
+    {
+      "id": "use",
+      "q": "用途与尺寸",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "cover",
+          "label": "社媒封面（1200×630）",
+          "default": true
+        },
+        {
+          "v": "poster",
+          "label": "手机海报（1080×1920）"
+        },
+        {
+          "v": "banner",
+          "label": "网页 banner（宽幅）"
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "q": "风格",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "minimal",
+          "label": "极简（大字 + 留白）",
+          "default": true
+        },
+        {
+          "v": "collage",
+          "label": "杂志拼贴（多层素材）"
+        },
+        {
+          "v": "hand",
+          "label": "手绘 / 插画感"
+        }
+      ]
+    },
+    {
+      "id": "text",
+      "q": "文案从哪来",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "given",
+          "label": "我给全了",
+          "default": true
+        },
+        {
+          "v": "draft",
+          "label": "你按主题拟一版"
+        },
+        {
+          "v": "title",
+          "label": "只放标题就行"
+        }
+      ]
+    },
+    {
+      "id": "source",
+      "q": "交付什么",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "png",
+          "label": "直接出成品图",
+          "default": true
+        },
+        {
+          "v": "editable",
+          "label": "要可编辑源文件（SVG）"
+        }
+      ]
+    },
+    {
+      "id": "color",
+      "q": "配色",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "mono",
+          "label": "单色 + 一个强调色",
+          "default": true
+        },
+        {
+          "v": "duo",
+          "label": "双色对比"
+        },
+        {
+          "v": "you",
+          "label": "你定"
+        }
+      ]
+    },
+    {
+      "id": "brand",
+      "q": "品牌元素",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "exist",
+          "label": "有 logo / 字体规范",
+          "default": true
+        },
+        {
+          "v": "zero",
+          "label": "没有，从零建一套"
+        }
+      ]
+    }
+  ]
+}

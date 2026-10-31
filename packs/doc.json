@@ -1,0 +1,138 @@
+{
+  "id": "doc",
+  "title": "文档 / 汇报",
+  "priority": 45,
+  "match": [
+    "文档",
+    "报告",
+    "ppt",
+    "幻灯片",
+    "表格",
+    "周报",
+    "日报",
+    "简历",
+    "说明书",
+    "手册",
+    "会议纪要",
+    "方案书",
+    "总结"
+  ],
+  "points": [
+    {
+      "id": "kind",
+      "q": "交付物",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "doc",
+          "label": "Word / Markdown 文档",
+          "default": true
+        },
+        {
+          "v": "deck",
+          "label": "PPT 幻灯片"
+        },
+        {
+          "v": "sheet",
+          "label": "Excel 表格"
+        }
+      ]
+    },
+    {
+      "id": "audience",
+      "q": "给谁看",
+      "lv": 1,
+      "opts": [
+        {
+          "v": "inner",
+          "label": "内部同事",
+          "default": true
+        },
+        {
+          "v": "client",
+          "label": "客户 / 甲方"
+        },
+        {
+          "v": "boss",
+          "label": "领导汇报"
+        }
+      ]
+    },
+    {
+      "id": "length",
+      "q": "篇幅",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "s",
+          "label": "1~2 页",
+          "default": true
+        },
+        {
+          "v": "m",
+          "label": "5~10 页"
+        },
+        {
+          "v": "l",
+          "label": "20 页以上"
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "q": "要不要数据",
+      "lv": 2,
+      "opts": [
+        {
+          "v": "given",
+          "label": "用我给的数字",
+          "default": true
+        },
+        {
+          "v": "fake",
+          "label": "你造合理示例"
+        },
+        {
+          "v": "no",
+          "label": "不要数据"
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "q": "视觉",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "plain",
+          "label": "朴素（重内容）",
+          "default": true
+        },
+        {
+          "v": "biz",
+          "label": "商务模板"
+        },
+        {
+          "v": "design",
+          "label": "有设计感"
+        }
+      ]
+    },
+    {
+      "id": "file",
+      "q": "文件形式",
+      "lv": 3,
+      "opts": [
+        {
+          "v": "native",
+          "label": "直接给 .docx / .pptx",
+          "default": true
+        },
+        {
+          "v": "md",
+          "label": "Markdown 就够"
+        }
+      ]
+    }
+  ]
+}

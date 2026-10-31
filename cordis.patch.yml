@@ -1,0 +1,8 @@
+# dsh-clarify-first bundle patch: one insert over the profile tree.
+#
+# 装了本包（`dsh plugin --profile desktop add link:<dir>`）才会激活这一行。
+# 注意：这是 insert，不要在本 profile 的 cordis.patch.yml 里再写一条同 id 的顶层条目，
+# 否则插件会被注册两次。
+- insert:
+    - id: clarify-first
+      name: 'dsh-clarify-first'
